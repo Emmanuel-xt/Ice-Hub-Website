@@ -1,0 +1,906 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Nunito:wght@700;900;1000&display=swap");
+
+:root{
+    --lightblue : rgb(6, 163, 218);
+} 
+
+.navbg {
+  background-color: rgb(9, 30, 62);
+  color: white;
+}
+.nav{
+  z-index: 5;
+  border-bottom: 1px solid grey;
+  /* background-color: aliceblue; */
+  
+}
+.navbar-con {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin: auto;
+}
+.nav-location {
+  width: 600px;
+  font-size: 15px;
+}
+.nav-contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.loc-con {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.phone,
+.email {
+  width: 100px;
+}
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+.facebook {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 3px;
+  margin-left: 10px;
+  position: relative;
+  
+}
+/* .facebook::before{
+  content: "";
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+} */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 93%;
+  margin: 0px 50px ;
+  padding: 20px 0px;
+  color: white;
+  position: sticky;
+  /* position: absolute; */
+  top: 0px;
+  left: 0px;
+
+  /* border-bottom: 1px solid; */
+}
+.brand {
+  font-weight: 900;
+  z-index: 5;
+}
+.routes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.route {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+.lesson-types-con{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  width: 180px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.lesson-types{
+  color: black;
+  font-size: 17px;
+  font-family: nunito;
+}
+.navbar-icon{
+  font-size: 30px;
+  display: none;
+}
+footer {
+  background-color: rgb(9, 30, 62);
+  display: flex;
+  flex-direction: column;
+  z-index: -4;
+  position: relative;
+}
+.footer-con {
+  width: 83%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  color: white;
+}
+.footer-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 21rem;
+  background-color: var(--lightblue);
+  color: white;
+  height: 30rem;
+  z-index: 3;
+}
+@media (max-width:954px) {
+  .footer-signup {
+    width: 100%;
+  }
+  
+}
+.signup input {
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+}
+.signup button {
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: rgb(9, 30, 62);
+}
+.reach-out {
+  padding: 40px 0px;
+}
+.get-in-touch h1 {
+  font-size: 30px;
+}
+.tofro {
+  position: relative;
+  width: 130px;
+  height: 5px;
+  background-color: var(--lightblue);
+  border-radius: 2px;
+  margin: 20px 0 30px;
+}
+.tofro::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  height: 100%;
+  border-radius: 2px;
+  width: 10px;
+  animation: tofro 4s linear infinite;
+}
+@keyframes tofro {
+  /* 0%{
+        left: 20px;
+      } */
+  50% {
+    left: 100%;
+  }
+}
+
+.footer-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 10px;
+  width: 190px;
+  margin-top: 10px;
+}
+.footer-location span {
+  font-size: 1rem;
+}
+
+.footer-location .icon {
+   
+  color: var(--lightblue);
+}
+.footer-social .social{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 25px;
+    position: relative;
+  }
+  .footer-social .social:hover{
+    color: var(--lightblue);
+    transition: 0.5s;
+  }
+.get-quick{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 80px;
+  
+}
+.quicklink-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: 17px;
+}
+.quicklink-link .icon{
+  color: var(--lightblue);
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 500px; */
+    color: white;
+    background-color: rgb(6,20,41);
+    height: 5rem;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  
+  @media (max-width: 700px) {
+    .get-quick{
+      gap: 5px;
+    }
+    .copyright{
+      position: relative;
+    }
+  }
+  /* Home Section Began Here -------------------------------------------------- */
+  
+  .home{
+    position: relative;
+  }
+  .landing-page{
+    background-image: url(../src/images/christmasparty.jpg);
+    background-size: cover;
+  height: 50rem;
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  
+}
+.scrolling{
+  background-color: white;
+  color: var(--lightblue);
+  width: 100%;
+  padding: 20px 40px;
+  margin: 0px 0px ;
+  align-items: center;
+  
+}
+.scrollinglink{
+  color: var(--lightblue);
+}
+.landing-page::before{
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 59, 125, 0.7);
+  z-index: -1;
+}
+.landing-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 70%;
+  margin: auto;
+  height: 100%;
+}
+.landing-content p{
+  font-size: 1.25rem;
+  font-family: Nunito;
+}
+.landing-content h1{
+  font-size: 5rem;
+  text-align: center;
+}
+.landing-content button{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 20px 40px;
+  color: white;
+  font-size: larger;
+  font-family: "nunito";
+}
+
+.boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 620px;
+  width: 100%; 
+}
+.box{
+  background-color: var(--lightblue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 150px;
+  /* padding: 40px 100px ; */
+  gap: 20px;
+  /* height: 10rem; */
+}
+.midb{
+  background-color: aliceblue;
+}
+.box-icon{
+  display: flex;
+  flex-direction: row;
+  background-color: aliceblue;
+  font-size: 20px;
+  color: var(--lightblue);
+  padding: 25px;
+  border-radius: 3px;
+}
+.midi{
+  background-color: var(--lightblue);
+  color: aliceblue;
+}
+.box-texts{
+  font-family: "nunito";
+  font-weight: 700px;
+  color: aliceblue;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.midt{
+  color: var(--lightblue);
+}
+.box-texts span.number{
+  font-size:40px;
+  font-weight: 900;
+}
+.midn{
+  color: black;
+}
+.after-landing{
+  width: 80%;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+}
+.home-about-contents{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.texts h1{
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--lightblue);
+}
+.activities{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  /* justify-content: space-between; */
+  
+}
+
+.activity{
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  margin-right: 90px;
+  font-size: 22px;
+}
+.activity span{
+  color: var(--lightblue);
+  margin-right: 15px;
+}
+
+.call{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.call .icon{
+  color: aliceblue;
+  background-color: var(--lightblue);
+  padding: 20px;
+  border-radius: 3px;
+  margin-right: 25px;
+}
+.call span{
+  display: block;
+  font-family: nunito;
+  line-height: 1.7;
+  font-size: 1.4rem;
+}
+.call .number{
+  color: var(--lightblue);
+}
+.image img{
+  width: 400px;
+  height: 400px;
+}
+
+/* Home Choice Styling Starts Here -------------------------------------------*/
+.home-choice{
+  margin-top: 250px;
+}
+.home-choice-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-choice-heading h2{
+  color: var(--lightblue);
+  font-size: 1.25rem;
+  font-family: nunito;
+  
+}
+.home-choice-heading h1{
+  font-size: 2.5rem;
+  
+  width: 100%;
+  text-align: center;
+}
+.home-choice-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-choice-content .left{
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  font-family: nunito;
+}
+.left .icon-text{
+  display: flex;
+  flex-direction: column;
+}
+.icon-text .icon{
+  background-color: var(--lightblue);
+  color: aliceblue;
+  padding: 25px;
+  border-radius: 4px;
+}
+.icon-text .text{
+  font-size: 25px;
+}
+.home-choice-content img{
+  width: 400px;
+  
+}
+
+/* Home services Styling Starts Here ---------------------------------------------- */
+.home-services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 250px;
+}
+.box-services{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content:center;
+  align-items: center;
+}
+.home-services h1{
+  
+  color: var(--lightblue);
+  font-size: 1.25rem;
+  font-family: nunito;
+}
+.box-service{
+  background-color: rgb(238,249,255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 300px;
+  width: 320px;
+  /* width: 100%; */
+  
+}
+@media (max-width:814px) {
+  .box-service{
+    width: 100%;
+  }
+}
+.box-service .icon-box{
+  background-color: var(--lightblue);
+  color:aliceblue;
+  width: fit-content;
+  padding: 20px;
+  transform: rotate(140deg) ;
+  position: relative;
+  border-radius: 5px;
+}
+.icon-box .icon{
+  transform: rotate(-140deg);
+  font-size: 20px;
+}
+.box-service span{
+  font-family: nunito;
+  text-align: center;
+  font-size: 25px;
+}
+.dis{
+  color: aliceblue;
+  background-color: var(--lightblue);
+}
+
+/* Home Contact Starts Here  */
+
+.home-contact{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+.contact-texts{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-texts .customer-service{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  font-size: 20px;
+  
+}
+.customer-service .icon-text .call-service{
+  color: var(--lightblue);
+  margin-right: 10px;
+}
+
+form.form{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: var(--lightblue);
+  gap: 10px;
+}
+.form input , textarea{
+  color: grey;
+  background-color: rgb(238,249,255);
+  border: none;
+  /* padding: 17px; */
+  padding: 0.375rem 0.75rem;
+  height: 55px;
+  width: 350px;
+}
+.form button{
+  border: none;
+  color: white;
+  padding: 10px;
+  background-color: rgb(9,30,62);
+}
+
+/* Firstly this is the General Landing Page Content , everyone shares from this  */
+.general-landing-page{
+  background-image: url(../src//images/codenviron.jpg);
+  background-size: cover;
+  height: 50rem;
+  position: relative;
+  top: -100px;
+  z-index: -1;
+  height: 400px;
+}
+.general-landing-page::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(9,30,62,0.9);
+  z-index: -1;
+}
+.gen h1{
+  font-size: 50px;
+}
+/* About page styling starts here --------------------------------------------- */
+
+.about{
+  display: flex;
+  flex-direction: column;
+}
+
+/* contact styling starts here ---------------------- */
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.contact-contacts{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.contact-call{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  /* gap: 20px; */
+  margin-left: 20px;
+}
+.contact-call .icon{
+  color: aliceblue;
+  background-color: var(--lightblue);
+  padding: 20px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.contact-call span{
+  display: block;
+  font-family: nunito;
+  line-height: 1.7;
+  font-size: 20px;
+}
+.contact-call .number{
+  color: var(--lightblue);
+}
+.form-map{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  justify-content: space-around;
+  gap: 15px;
+  height: auto;
+  
+}
+.contact-form .text-inputs{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.africa-map{
+  border: 1px solid var(--lightblue);
+  height: 20rem;
+  width: 30rem;
+}
+.contact-form input{
+  color: grey;
+  background-color: rgb(238,249,255);
+  border: none;
+  outline: none;
+  padding: 20px 40px; 
+  width: 100%;
+  
+}
+.contact-form textarea{
+  width: 100%;
+  height: 130px;
+}
+.contact-form button{
+  padding: 20px;
+  color: white;
+  border: none;
+  background-color: rgb(6,163,218);
+  border-radius: 3px;
+}
+
+/* Learnings Styling Starts here accordingly */
+/* Essential Class ----------------------><--------------------------------- */
+.ess{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 50%;
+}
+.ess h1{
+  color: var(--lightblue);
+  font-size: 1.5rem;
+}
+@media (max-width:958px) {
+  .landing-content h1{
+    font-size: 60px;
+  }
+  .landing-content h2{
+    font-size: 30px;
+  }
+  .landing-content button{
+    padding: 5px;
+  }
+}
+@media (max-width:1050px) {
+  .boxes{
+    gap: 2px;
+  }
+  .landing-content h1{
+    font-size: 70px;
+  }
+}
+
+@media (max-width:988px) {
+  .navbg{
+    width: 100%;
+    background-color: aliceblue;
+    display: none;
+  }
+  .navbar-con{
+    display: none;
+  }
+  .navbar-icon{
+    display: block;
+  }
+  
+  .routes{
+    display: block;
+    background-color: white;
+    top: 80px;
+    right: 0px;
+    padding: 0px 60px;
+    width: 100%;
+    position: absolute;
+
+  }
+
+  .route{
+    top: 0px;
+    color: black;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding-bottom: 20px ;
+   
+  }
+  .lesson-types-con{
+    display: block;
+    width: 100%;
+    background-color: white;
+    position: static;
+    padding: 0px 0px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  
+  }
+  
+  .lesson-types{
+    color: black;
+    font-size: 17px;
+    font-family: nunito;
+    display: block;
+    width: 90%;
+    padding: 10px 0px;
+ 
+  }
+  .nav{
+    width: 100%;
+    margin: 0px 0px ;
+    padding: 20px 30px;
+    background-color: white;
+    position: static;
+  }
+  .nav .brand{
+    color: var(--lightblue);
+  }
+  .navbar-icon{
+    color: var(--lightblue);
+    border: 2px solid var(--lightblue);
+    padding: 2px;
+    display: block;
+    
+  }
+}
+@media (max-width:766px) {
+  /* Home Page media Query */
+  
+  .landing-content h1{
+    font-size: 50px;
+  }
+  .landing-content button{
+    padding: 5px;
+  }
+  .boxes{
+    gap: 80px;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    
+    
+  }
+  .boxes .box{
+    width: 100%;
+  }
+}
+@media (max-width:514px) {
+  .landing-content h1{
+    font-size: 35px;
+  }
+  .landing-content p{
+    font-size: 18px;
+}
+.home-choice-heading h2{
+  font-size: 20px;
+  
+}
+.home-choice-heading h1{
+  font-size: 30px;
+}
+form.form{
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.form input,textarea{
+  width: 100%;
+  padding: 5px ;
+}
+.image img{
+  width: 300px;
+  height: 300px;
+}
+.home-choice-content img{
+  width: 300px;
+  
+}
+}
+@media (max-width:482px) {
+  .home-choice-heading h2{
+    font-size: 18px;
+    
+  }
+  .home-choice-heading h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  .nav{
+      width: 100%;
+      margin: 0px 0px ;
+      padding: 20px 30px;
+    }
+    
+  }
+  .none{
+    display: none;
+  }
