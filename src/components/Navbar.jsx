@@ -91,6 +91,11 @@ const Navbar = () => {
 
       <div className={`nav ${Scrolled? "scrolling" : ""}`}>
         <h1 className="brand">ICE HUB</h1>
+              <span className="navbar-icon" onClick={toggledisplay}>
+                {
+                  display ? <ImCross /> :<FaBars/>
+                }
+                </span>
 
        
         <div className={`routes  ${!display ? "none" : ""}  `}>
@@ -132,11 +137,6 @@ const Navbar = () => {
             <span className={`route ${Scrolled? "scrollinglink" : ""}`}>Contact</span>
           </Link>
         </div>
-              <span className="navbar-icon" onClick={toggledisplay}>
-                {
-                  display ? <ImCross /> :<FaBars/>
-                }
-                </span>
       </div>
       {/* <hr style={{position:"absolute" , top:"-100px"}}/> */}
     </>

@@ -288,6 +288,9 @@ footer {
 .scrollinglink{
   color: var(--lightblue);
 }
+.lin{
+  border: 5px solid;
+}
 .landing-page::before{
   content: '';
   position: absolute;
@@ -772,13 +775,14 @@ form.form{
   }
   
   .routes{
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     top: 80px;
     right: 0px;
     padding: 0px 60px;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
 
   }
 
