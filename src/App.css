@@ -737,6 +737,16 @@ form.form{
   justify-content: left;
   width: 50%;
 }
+@media (max-width:807px) {
+  .ess{
+    width: 80%;
+  }
+}
+@media (max-width:507px) {
+  .ess{
+    width: 90%;
+  }
+}
 .ess h1{
   color: var(--lightblue);
   font-size: 1.5rem;
@@ -782,8 +792,9 @@ form.form{
     right: 0px;
     padding: 0px 60px;
     width: 100%;
+    text-decoration: none;
     /* position: absolute; */
-
+    
   }
 
   .route{
@@ -793,7 +804,12 @@ form.form{
     width: 100%;
     text-align: left;
     padding-bottom: 20px ;
-   
+    
+    
+  }
+  .Link{
+    text-decoration: none;
+
   }
   .lesson-types-con{
     display: block;

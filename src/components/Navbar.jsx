@@ -100,10 +100,10 @@ const Navbar = () => {
        
         <div className={`routes  ${!display ? "none" : ""}  `}>
 
-          <Link to="/">
+          <Link to="/" className="Link">
             <span className={`route ${Scrolled? "scrollinglink" : ""}`}>Home</span>
           </Link>
-          <Link to="/about">
+          <Link to="/about" className="Link">
             <span className={`route ${Scrolled? "scrollinglink" : ""}`}>About</span>
           </Link>
 
@@ -115,16 +115,16 @@ const Navbar = () => {
             <span className={`route ${Scrolled? "scrollinglink" : ""}`}>Learnings</span>
             {drop ? (
               <div className="lesson-types-con">
-                <Link to="/essentialclass">
+                <Link to="/essentialclass" className="Link">
                   <span className={` lesson-types scrollinglink ${Scrolled ? "scrollinglink" : ""}`}>Essential CLass</span>
                 </Link>
-                <Link to="/advancedclass">
+                <Link to="/advancedclass" className="Link">
                   <span className={` lesson-types scrollinglink ${Scrolled ? "scrollinglink" : ""}`}>Advanced CLass</span>
                 </Link>
-                <Link to="/skit">
+                <Link to="/skit" className="Link">
                   <span className={` lesson-types scrollinglink ${Scrolled ? "scrollinglink" : ""}`}>Skit </span>
                 </Link>
-                <Link to="/exhibition">
+                <Link to="/exhibition" className="Link">
                   <span className={` lesson-types scrollinglink ${Scrolled ? "scrollinglink" : ""}`}>Exibition Class</span>
                 </Link>
               </div>
@@ -133,7 +133,7 @@ const Navbar = () => {
               )}
           </div>
 
-          <Link to="/Contact">
+          <Link to="/Contact" className="Link">
             <span className={`route ${Scrolled? "scrollinglink" : ""}`}>Contact</span>
           </Link>
         </div>
