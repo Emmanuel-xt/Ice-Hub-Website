@@ -24,6 +24,10 @@
   width: 93%;
   margin: auto;
 }
+.Link{
+  text-decoration: none;
+
+}
 .nav-location {
   width: 600px;
   font-size: 15px;
@@ -99,6 +103,10 @@ h1 {
   color: white;
   cursor: pointer;
 }
+.Link{
+  text-decoration: none;
+
+}
 .lesson-types-con{
   display: flex;
   flex-direction: column;
@@ -107,7 +115,6 @@ h1 {
   width: 180px;
   height: auto;
   padding: 20px;
-  border: 1px solid black;
   border-radius: 2px;
   cursor: pointer;
 }
@@ -614,6 +621,7 @@ form.form{
 }
 
 /* Firstly this is the General Landing Page Content , everyone shares from this  */
+
 .general-landing-page{
   background-image: url(../src//images/codenviron.jpg);
   background-size: cover;
@@ -806,10 +814,6 @@ form.form{
     padding-bottom: 20px ;
     
     
-  }
-  .Link{
-    text-decoration: none;
-
   }
   .lesson-types-con{
     display: block;
